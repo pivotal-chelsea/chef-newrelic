@@ -161,3 +161,11 @@ collector_host=<%= @collector_host %>
 <% else %>
 timeout=<%= @timeout %>
 <% end %>
+
+#
+# Option : hostname
+# Value  : The name of the server being monitored that will be reported to newrelic.
+<% if @hostname != nil %>
+    hostname=<%= @hostname %>
+<% end %>
+
